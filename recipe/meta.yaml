@@ -1,6 +1,6 @@
 {% set name = "w3g" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "e30bba6686cbce5169bcb8e9167f71319fda2f1775d2fd12a06c1883fcd0584e" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "38b2420f1f931a02ec9b9d992d9c890e62526070d3b92f3bf3fdfddb25ceb57f" %}
 
 package:
   name: {{ name|lower }}
