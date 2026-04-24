@@ -1,6 +1,6 @@
 {% set name = "w3g" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "38b2420f1f931a02ec9b9d992d9c890e62526070d3b92f3bf3fdfddb25ceb57f" %}
+{% set version = "1.0.5" %}
+{% set sha256 = "ce4f28c54e10590267fa62252088e5327d6676f16c1d2ad06dd4eaca2e29261e" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: CC0
   license_family: OTHER
   license_file: license
-  summary: 'Access Warcraft 3 replay files from Python 2 or 3'
+  summary: Access Warcraft 3 replay files from Python 2 or 3
 
 extra:
   recipe-maintainers:
